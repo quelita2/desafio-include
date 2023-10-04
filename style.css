@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adicionar as variáveis de cor aqui! */
+:root {
+    --color-pink: #E63D93;
+    --color-blue: #2DB1FC;
+    --color-shadow-blue: #0FA9FF;
+    --color-white: #FFFFFF;
+    --color-gray: #E1E1E1;
+}
+
+body {
+    background-color: var(--color-blue);
+}
+
+body * {
+    color: var(--color-white);
+    font-family: Kodchasan;
+    font-style: normal;
+    line-height: normal;
+}
+
+#header {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 2px 3px 4px var(--color-shadow-blue);
+    height: 5em;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#logo {
+    width: 92px;
+    height: 94.914px;
+    flex-shrink: 0;
+}
+
+.navigation-header {
+    display:flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.navigation-header a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 0.5s;
+    border: 1px solid var(--color-white); /* como deixar a borda com gradiente? */
+    padding: 0 25px;
+    transition: 0.4s;
+}
+
+.navigation-header a:hover {
+    background-color: var(--color-pink);
+}
+
+#main {
+    height: 70vh;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 2px 3px 4px var(--color-shadow-blue);
+    padding: 10px;
+    margin: auto;
+}
+
+#main #texto{
+    height: 5rem;
+}
+
+#borda-barbie img {
+    width: 413.45px;
+    height: 423px;
+    flex-shrink: 0;
+
+    position: relative;
+}
+
+#perfil img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+
+    position: absolute;
+    top: 27%;
+    right: 58%;
+    z-index: 1;
+}
+
+#borda-barbie, #perfil, #texto {
+    display: inline-block;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--color-pink);
+    padding: 10px;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--color-white);
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .45rem 3.5rem;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s;
+}
+
+.footer_social_media {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.4s;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    padding: 10px;
+    font-weight: 100;
+}
+
+
