@@ -35,10 +35,20 @@ body * {
     padding: 0 10%;
 }
 
+.logo-include {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 #logo {
     width: 92px;
     height: 94.914px;
     flex-shrink: 0;
+}
+
+#texto {
+    padding: 2rem;
 }
 
 .navigation-header {
@@ -74,7 +84,7 @@ body * {
     height: 5rem;
 }
 
-#borda-barbie img {
+#borda-barbie {
     width: 413.45px;
     height: 423px;
     flex-shrink: 0;
@@ -82,22 +92,31 @@ body * {
     position: relative;
 }
 
-#perfil img {
+#conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#foto-perfil {
+    position: absolute;
     width: 250px;
     height: 250px;
     flex-shrink: 0;
     border-radius: 50%;
     border: 5px solid var(--color-white);
-
-    position: absolute;
-    top: 27%;
-    right: 58%;
+    margin: 80px 0px 0px 0;
     z-index: 1;
 }
 
-#borda-barbie, #perfil, #texto {
-    display: inline-block;
-    justify-content: center;
+#texto {
+    padding: 6rem;
 }
 
 footer {
@@ -136,4 +155,36 @@ footer {
     font-weight: 100;
 }
 
+@media (max-width: 768px) {
+    #header {
+        gap: 1em;
+    }
 
+    #main {
+        margin: 4em;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    #header {
+        gap: 1em;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    .navigation-header {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #main {
+        margin: 4em;
+    }
+
+    footer {
+        height: 100%;
+        position: fixed;
+    }    
+}
