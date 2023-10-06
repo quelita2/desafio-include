@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <title>Blog Pessoal | Include</title>
-</head>
-<body>
-    <div id="header" id="header">
-        <div id="logo">
-            <img src="./assets/include-logo.png" alt="Logo Include">
-        </div>
-        <div id="nome_logo">
-            <p>Include <br> Engenharia</p>
-        </div>
-        <ul class="navigation-header">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="posts.html">Posts</a></li>
-        </ul>
-    </div>
-    
-    <footer>
-        <div class="footer_content">
-            <div class="footer_contacts">
-                <div class="footer_logo">
-                    <h1>Blog Pessoal</h1>
-                    <p>Feito com ♥ por Quelita Míriam.</p>
-                </div>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="imagem/png" href="assets/borda-barbie-perfil.png" />
+        <title>Blog Pessoal | Include</title>
+    </head>
 
-                <div class="footer_social_media">
-                    <a href="https://linkedin.com/in/quelitamiriam" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                    <a href="https://instagram.com/quelitamiriam" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                    <a href="https://github.com/quelita2" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                    <a href="@quelitamiriam2@gmail.com" target="_blank">
-                        <ion-icon name="mail"></ion-icon>
-                    </a>
+    <body>
+        <header>
+            <div class="logo-include">
+                <div id="logo">
+                    <img src="./assets/include-logo.png" alt="Logo Include">
+                </div>
+                <div id="nome_logo">
+                    <p>Include <br> Engenharia</p>
                 </div>
             </div>
+            <button class="hamburguer"></button>
+            <nav class="nav">
+                <ul class="navigation-header">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="pagina_posts">
+            <h1>Posts</h1>
+            <div class="projeto">
+                <a href="https://github.com/quelita2/Plantal-ndia" target="_blank"><h3>Plantalândia | Jogo Educacional</h3></a>
+                <p>Objetivo de ensinar a criança como cuidar das plantas e mostrar a importância que a água e a luz fazem a esses seres vivos.</p>
+            </div>
+            <div class="projeto">
+                <a href="https://github.com/quelita2/social-tree-2.0" target="_blank"><h3>DEV Links | RockectSeat</h3></a>
+                <p>O DevLinks é um agregador de links para usar como cartão de visitas online.</p>
+            </div>
         </div>
-        <div id="footer_copyright">
-            &#169
-            2023 all rights reserve
-        </div>
-    </footer>
-    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
-    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
-</body>
+
+        <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+        <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+
+        <footer>
+            <div class="footer_content">
+                <div class="footer_contacts">
+                    <div class="footer_logo">
+                        <h1>Blog Pessoal</h1>
+                        <p>Feito com ♥ por Quelita Míriam.</p>
+                    </div>
+                    <div class="contatos">
+                        <p>Contatos:</p>
+                        <div class="footer_social_media">
+                            <a href="https://www.linkedin.com/in/quelita-m%C3%ADriam-bbb057211/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                            <a href="https://instagram.com/quelitamiriam" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://github.com/quelita2" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a href="mailto:@quelitamiriam2@gmail.com" target="_blank">
+                                <ion-icon name="mail"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2023 all rights reserve
+            </div>
+        </footer>
+    </body>
+    <script defer src="script.js"></script> <!-- O atributo defer é para carregar o Js dps do HTML-->
 </html>
